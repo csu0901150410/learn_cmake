@@ -1,15 +1,13 @@
-﻿#include <iostream>
+﻿#include <wx/wx.h>
+#include "MyFrame.h"
 
-#include "add.h"
+class MyApp : public wxApp {
+public:
+    virtual bool OnInit() override {
+        MyFrame* frame = new MyFrame("wxWidgets App");
+        frame->Show(true);
+        return true;
+    }
+};
 
-#include "my_static_lib.h"
-
-int main()
-{
-    std::cout << "Hello World!" << std::endl;
-    std::cout << "call add(3, 4) : " << add(3, 4) << std::endl;
-
-    print_message();
-
-    return 0;
-}
+wxIMPLEMENT_APP(MyApp);

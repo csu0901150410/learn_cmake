@@ -1,5 +1,2 @@
-::生成build目录
-cmake -G "MinGW Makefiles" -B build .
-
-::make ./build/Makefile
+cmake -G "MinGW Makefiles" -S . -B build
 cmake --build build
