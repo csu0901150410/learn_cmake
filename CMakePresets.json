@@ -1,0 +1,15 @@
+{
+    "version": 4,
+    "configurePresets": [
+        {
+            "name": "app",
+            "displayName": "Default Preset",
+            "description": "Preset to use for the app",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_CXX_STANDARF": "14",
+                "IS_BUILD_APP": "ON"
+            }
+        }
+    ]
+}
